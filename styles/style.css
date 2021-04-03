@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -122,10 +127,12 @@ a {
 }
 
 .feature .container .feature-title {
-  color: #999;
+  color: #777;
   font-size: 50px;
   position: relative;
   margin-bottom: 40px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .feature .container .feature-title::before {
@@ -259,12 +266,18 @@ a {
   font-size: 13.5px;
 }
 
+.services {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
 .services .container .services-title {
-  color: #999;
+  color: #777;
   font-size: 50px;
   position: relative;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -299,5 +312,288 @@ a {
 .services .container .row .services-box i {
   font-size: 35px;
   padding-bottom: 10px;
+}
+
+.gray {
+  background-color: #f8f8f8;
+}
+
+.action {
+  background: url(../images/dashboard-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10px 20px;
+}
+
+.action .container .row .action-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.action .container .row .action-box h1 {
+  color: #777;
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+.action .container .row .action-box h1::before {
+  content: "";
+  width: 90%;
+  height: 1.5px;
+  position: absolute;
+  bottom: -10%;
+  left: 6%;
+  background-color: #65cd00;
+}
+
+.action .container .row .action-box p {
+  color: #333;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.price .container .price-table {
+  color: #777;
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.price .container .price-table::before {
+  content: "";
+  width: 20%;
+  height: 1.5px;
+  position: absolute;
+  bottom: -10%;
+  left: 40%;
+  background-color: #65cd00;
+}
+
+.price .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price .container .row .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #f8f8f8;
+  margin: 20px 10px;
+  padding: 0;
+}
+
+.price .container .row .price-box .box-title {
+  width: 100%;
+  background-color: #eee;
+}
+
+.price .container .row .price-box .box-title p {
+  color: #888;
+}
+
+.price .container .row .price-box .box-title p span {
+  color: #555;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.price .container .row .price-box .box-title h3 {
+  color: #888;
+  font-size: 24px;
+}
+
+.price .container .row .price-box .box-title h4 {
+  background: #e8e8e8;
+  margin: 0;
+  font-size: 16px;
+  padding: 15px;
+  font-weight: 400;
+  color: #333;
+}
+
+.price .container .row .price-box .ultimate {
+  background-color: #65cd00;
+}
+
+.price .container .row .price-box .ultimate p {
+  color: #fff;
+}
+
+.price .container .row .price-box .ultimate p span {
+  color: #fff;
+}
+
+.price .container .row .price-box .ultimate h3 {
+  color: #fff;
+}
+
+.price .container .row .price-box .ultimate h4 {
+  color: #fff;
+  background-color: #61c103;
+}
+
+.price .container .row .price-box .box-content p {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.about .container .about-title {
+  color: #777;
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.about .container .about-title::before {
+  content: "";
+  width: 20%;
+  height: 1.5px;
+  position: absolute;
+  bottom: -10%;
+  left: 40%;
+  background-color: #65cd00;
+}
+
+.about .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .container .row .about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about .container .row .about-box .box-img {
+  position: relative;
+}
+
+.about .container .row .about-box .box-img::before {
+  content: "MARKETING";
+  position: absolute;
+  top: 70%;
+  left: 0;
+  color: #fff;
+  background: #019299;
+}
+
+.about .container .row .about-box .box-img img {
+  width: 100%;
+}
+
+.about .container .row .about-box .box-content {
+  padding: 10px 20px;
+}
+
+.about .container .row .about-box .box-content h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.about .container .row .about-box .box-content p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contact {
+  background: #65cd00;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact p {
+  color: #fff;
+}
+
+.contact p a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.contact p a:hover {
+  color: #65cd00;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

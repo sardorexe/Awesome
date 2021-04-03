@@ -2,6 +2,11 @@
 
 $green: #65cd00;
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -74,10 +79,12 @@ a {
     align-items: center;
     padding: 20px;
     .feature-title {
-      color: #999;
+      color: #777;
       font-size: 50px;
       position: relative;
       margin-bottom: 40px;
+      font-weight: 300;
+      text-align: center;
       &::before {
         content: "";
         width: 83%;
@@ -165,13 +172,16 @@ a {
 }
 
 .services {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
   .container {
     .services-title {
-      color: #999;
+      color: #777;
       font-size: 50px;
       position: relative;
-      margin-top: 30px;
-      margin-bottom: 60px;
+      margin-bottom: 40px;
+      font-weight: 300;
+      margin-top: 50px;
       text-align: center;
       &::before {
         content: "";
@@ -195,6 +205,220 @@ a {
           font-size: 35px;
           padding-bottom: 10px;
         }
+      }
+    }
+  }
+}
+.gray {
+  background-color: #f8f8f8;
+}
+
+.action {
+  background: url(../images/dashboard-img.jpg);
+  // background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 10px 20px;
+  .container {
+    .row {
+      .action-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h1 {
+          color: #777;
+          font-size: 50px;
+          position: relative;
+          margin-bottom: 40px;
+          font-weight: 300;
+          margin-top: 50px;
+          &::before {
+            content: "";
+            width: 90%;
+            height: 1.5px;
+            position: absolute;
+            bottom: -10%;
+            left: 6%;
+            background-color: $green;
+          }
+        }
+        p {
+          color: #333;
+          font-weight: 300;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+.price {
+  .container {
+    .price-table {
+      color: #777;
+      font-size: 50px;
+      position: relative;
+      margin-bottom: 40px;
+      font-weight: 300;
+      margin-top: 50px;
+      text-align: center;
+      &::before {
+        content: "";
+        width: 20%;
+        height: 1.5px;
+        position: absolute;
+        bottom: -10%;
+        left: 40%;
+        background-color: $green;
+      }
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .price-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f8f8f8;
+        margin: 20px 10px;
+        padding: 0;
+        .box-title {
+          width: 100%;
+          background-color: #eee;
+          p {
+            color: #888;
+            span {
+              color: #555;
+              font-size: 48px;
+              font-weight: 700;
+            }
+          }
+          h3 {
+            color: #888;
+            font-size: 24px;
+          }
+          h4 {
+            background: #e8e8e8;
+            margin: 0;
+            font-size: 16px;
+            padding: 15px;
+            font-weight: 400;
+            color: #333;
+          }
+        }
+        .ultimate {
+          background-color: #65cd00;
+          p {
+            color: #fff;
+            span {
+              color: #fff;
+            }
+          }
+          h3 {
+            color: #fff;
+          }
+          h4 {
+            color: #fff;
+            background-color: #61c103;
+          }
+        }
+        .box-content {
+          p {
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .container {
+    .about-title {
+      color: #777;
+      font-size: 50px;
+      position: relative;
+      margin-bottom: 50px;
+      font-weight: 300;
+      margin-top: 50px;
+      text-align: center;
+      &::before {
+        content: "";
+        width: 20%;
+        height: 1.5px;
+        position: absolute;
+        bottom: -10%;
+        left: 40%;
+        background-color: $green;
+      }
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .about-box {
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .box-img {
+          position: relative;
+          &::before {
+            content: "MARKETING";
+            position: absolute;
+            top: 70%;
+            left: 0;
+            color: #fff;
+            background: #019299;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .box-content {
+          padding: 10px 20px;
+          h3 {
+            color: #333;
+            font-size: 24px;
+            margin: 10px 0px;
+          }
+          p {
+            color: #333;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background: $green;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: #fff;
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      &:hover {
+        color: $green;
+        background-color: #fff;
       }
     }
   }
