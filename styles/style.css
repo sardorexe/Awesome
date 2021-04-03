@@ -51,16 +51,6 @@ a {
 }
 
 .header .container .header-nav .nav-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -76,6 +66,14 @@ a {
 .header .container .header-nav .nav-items .item:hover {
   background-color: #fff;
   color: #65cd00;
+}
+
+.header .container .header-nav i {
+  display: none;
+}
+
+.header .container .nav-toggle {
+  display: none;
 }
 
 .header .container .header-content {
@@ -595,5 +593,101 @@ a {
 .contact p a:hover {
   color: #65cd00;
   background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header .container .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .container .header-nav .nav-items {
+    display: none;
+  }
+  .header .container .header-nav i {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    cursor: pointer;
+  }
+  .header .container .nav-toggle {
+    display: none;
+    background: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 0px;
+  }
+  .header .container .nav-toggle .item {
+    color: #65cd00;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .header .container .nav-toggle .item:hover {
+    background-color: #fff;
+    color: #65cd00;
+  }
+  .header .container .nav-toggle.sticky {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    -webkit-animation-name: sticky;
+            animation-name: sticky;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+  }
+  .header .container .nav-toggle.sticky a {
+    border-bottom: 1px solid transparent;
+  }
+  .header .container .nav-toggle.sticky a:hover {
+    border-color: #65cd00;
+  }
+}
+
+@-webkit-keyframes sticky {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes sticky {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
