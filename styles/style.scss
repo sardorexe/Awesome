@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+$green: #65cd00;
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: $green;
+  height: 80vh;
+  position: relative;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .header-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      .nav-brand {
+        color: #ffff;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 1.2px;
+      }
+      .nav-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .item {
+          color: #fff;
+          margin-left: 20px;
+          font-size: 18px;
+          font-weight: 400;
+          &:hover {
+            background-color: #fff;
+            color: $green;
+          }
+        }
+      }
+    }
+    .header-content {
+      position: absolute;
+      top: 40%;
+      left: 16%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translate(-50% 50%);
+      .content-title {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-size: 45px;
+        font-weight: 700;
+      }
+      .content-text {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.feature {
+  border-bottom: 1px solid #cccc;
+  padding-bottom: 40px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    .feature-title {
+      color: #999;
+      font-size: 50px;
+      position: relative;
+      margin-bottom: 40px;
+      &::before {
+        content: "";
+        width: 83%;
+        height: 1.5px;
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+        background-color: $green;
+      }
+    }
+    .feature-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-icon {
+          color: $green;
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+        &-title {
+          color: #393939;
+          font-weight: 500;
+          font-size: 16px;
+        }
+        &-text {
+          color: #636363;
+          font-size: 15px;
+          font-weight: 300;
+          padding: 0px 25px;
+        }
+      }
+    }
+  }
+}
+
+.install {
+  background-color: #f8f8f8;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #cccc;
+  .container {
+    .row {
+      .install-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .box-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 10px 0px;
+          i {
+            color: #fff;
+            background-color: $green;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 30px;
+            margin-right: 20px;
+          }
+          .text-content {
+            display: flex;
+            flex-direction: column;
+            .content-title {
+              font-size: 24px;
+            }
+            .content-text {
+              color: #333;
+              font-size: 13.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  .container {
+    .services-title {
+      color: #999;
+      font-size: 50px;
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 60px;
+      text-align: center;
+      &::before {
+        content: "";
+        width: 15%;
+        height: 1.5px;
+        position: absolute;
+        bottom: 0;
+        left: 42.5%;
+        background-color: #65cd00;
+      }
+    }
+    .row {
+      .services-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 17px 24px;
+        i {
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
